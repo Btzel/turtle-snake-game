@@ -16,8 +16,8 @@ class GameScreen:
         self.screen.onkey(key="a", fun=turn_left)
         self.screen.onkey(key="d", fun=turn_right)
 
-    def exit_event(self):
-        self.screen.exitonclick()
-
     def screen_updater(self):
         self.screen.update()
+
+    def exit_event(self):
+        self.screen.exitonclick()
